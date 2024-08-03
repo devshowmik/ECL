@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <title>ECL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+
+        
+    </script>
+
+<div class="main">
+    <form action="">
+        <input type="text" placeholder="Name" id="name" required/>
+        <input type="tel" placeholder="Phone" id="phone" required/>
+        <input type="text" placeholder="Work" id="work" required/>
+        <input type="button" value="Add To List" onclick="addListData()"/>
+    </form>
+    <h4>Last 5 Listing</h4>
+    <table border="1">
+        <thead>
+            <td>Name</td>
+            <td>Phone</td>
+            <td>Work</td>
+            <td >Action</td>
+        </thead>
+        <tbody id="tableData">
+            <tr>
+                <td>showmik.dev</td>
+                <td>01704558553</td>
+                <td>Developer</td>
+                <td onclick='deleteListData()'>X</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
